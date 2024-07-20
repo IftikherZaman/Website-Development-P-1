@@ -1,96 +1,92 @@
-  <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
+/* ABOUT SECTION */
+#about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.about-containers {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    justify-content: center;
+}
 
+.about-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
+.intro-paragraph {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
 
-       <section id="about">
-                <p class="section__text_p1" > Get To Know More </p>
-                <h1 class="title"> About Me </h1>
-                <div class="section-container">
-                    <div class = "section_pic-container">
-                     <img src = "./assets/IMG_8800.png" alt="Profile picture" class="about-pic" />
-                     <div class="about-details-container">
-                        <div class="about-containers" >
-                            <div class ="details-container" >
-                                <img src="./assets/experience.png" alt="education icon" class="icon" />
-                                  <h3> Education</h3>
-                                  <p> BASc. Computer Engineering <br> University of Toronto </p>
-                            </div>
+.intro-paragraph p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
 
-                            <div class="details-container" >
-                                <img src="./assets/education.png" alt="experience icon" class="icon" />
-                                <h3> Experience</h3>
-                                <p> Co-founder <br> Dispute Lens <br> </p>
+.intro-paragraph ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
 
-                            </div>
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 0;
+    padding-bottom: 75%; /* 4:3 aspect ratio */
+    overflow: hidden;
+    margin-top: 2rem;
+}
 
-                        </div>
-                        <div class="text-container" >
-                                <p>  I am an international student from Bangladesh. I started my undergraduate journey at UofT in Fall 2022 as a recipient of UofT Engineering's "International Scholar Award."<br> My biggest strength, if I have to name one, is my ability to absorb the admirable qualities of the people around me and replicate them in my behavior. Whatever I am now is the accumulation of all those traits that I have replicated from people at different spheres of my life journey. 
+.about-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
 
-                                    My biggest fear is oblivion. One of the reasons behind choosing engineering was to make a sustainable impact on the people around me and leave an impression beyond my presence. <br> My biggest daily challenge is waking up early, as being a night owl, I often find my peak productivity at night. 
-                                    
-                                   <br> In terms of leisure, I am a die-hard Manchester United fan. I love being a part of team sports and the competition in them. I am also a cinephile and have watched all kinds of classics, from Alfred Hitchcock thrillers to Stanley Kubrick films.
+.about-pic.active {
+    opacity: 1;
+}
 
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
+.details-container {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
 
-
-
-
-                                </p>
-
-                        </div>
-                </div>
-                
-                <img src="./assets/arrow.png" alt ="arrow" class="icon arrow" onclick="location.href='./#experience'" >
-            </section>
+.arrow {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}

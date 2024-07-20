@@ -29,7 +29,6 @@ a,
 }
 
 /* Desktop navigation */
-
 nav, 
 .nav-links {
     display: flex;
@@ -66,7 +65,8 @@ a:hover {
 .logo:hover {
     cursor: default;
 }
- 
+
+/* Hamburger menu styles remain the same */
 /*Hamburger */
 #hamburger-nav {
     display: none;
@@ -156,6 +156,7 @@ section {
     display: flex;
 }
 
+/* Profile Section styles remain the same */
 /* Profile Section */
 
 #profile {
@@ -272,61 +273,104 @@ section {
 }
 
 /* ABOUT SECTION */
-
 #about {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-containers {
+    display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.about-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.intro-paragraph {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+.intro-paragraph p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.intro-paragraph ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 0;
+    padding-bottom: 75%; /* 4:3 aspect ratio */
+    overflow: hidden;
     margin-top: 2rem;
 }
 
-.about-details-container {
-    justify-content: center;
-    flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-    display: flex;
-}
-
 .about-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
-.arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
+.about-pic.active {
+    opacity: 1;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .details-container {
     padding: 1.5rem;
-    flex: 1;
     background: white;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
+    width: 100%;
+    max-width: 300px;
 }
 
-.section-container {
-    gap: 4rem;
-    height: 80%;
+.arrow {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
 }
-
 .section__pic-container {
     height: 400px;
     width: 400px;
     margin: auto 0;
 }
 
+/* Rest of your CSS remains the same */
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -392,6 +436,12 @@ article .icon {
 .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
+}
+
+.experience-details-container {
+    text-align: center;
+    text-decoration-color: cornflowerblue;
+    
 }
 
 /* CONTACT */
