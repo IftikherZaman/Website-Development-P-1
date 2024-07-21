@@ -575,3 +575,23 @@ main {
     width: calc(50% - 0.5rem); /* Adjust the width of each container */
     margin: 0; /* Remove any default margins */
 }
+
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Night Mode Styles */
+body.night-mode {
+    background-color: #191919;
+    color: #fd8f00;
+}
+
+.nav-links a {
+    color: inherit; /* Inherit color from parent (body) */
+}
+
+.nav-links a:hover {
+    color: grey;
+}

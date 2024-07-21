@@ -54,3 +54,12 @@ setInterval(nextSlide, 5000);
 dots.forEach((dot, index) => {
     dot.addEventListener('click', () => showSlide(index));
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleButton = document.getElementById('toggle-button');
+  const body = document.body;
+
+  toggleButton.addEventListener('click', function() {
+      body.classList.toggle('night-mode');
+  });
+});
