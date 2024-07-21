@@ -506,3 +506,49 @@ footer p {
 main {
     flex: 1;
 }
+
+/* Additional styles for About section containers */
+#about .details-container {
+    background-color: #f8f8f8;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#about .details-container:hover {
+    transform: translateY(-5px);
+}
+
+#about .details-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#about .details-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about .details-container li,
+#about .details-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+#about .about-containers {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+#about .details-container {
+    width: calc(50% - 0.5rem); /* Adjust the width of each container */
+    margin: 0; /* Remove any default margins */
+}
