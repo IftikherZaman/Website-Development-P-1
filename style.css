@@ -320,10 +320,11 @@ section {
     position: relative;
     width: 100%;
     max-width: 600px;
-    height: 0;
-    padding-bottom: 75%; /* 4:3 aspect ratio */
+    height: 400px; /* Fixed height instead of padding-bottom */
     overflow: hidden;
-    margin-top: 2rem;
+    margin: 2rem auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-pic {
@@ -340,6 +341,28 @@ section {
 .about-pic.active {
     opacity: 1;
 }
+
+.slideshow-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: white;
+}
+
 
 .section-container {
     display: flex;

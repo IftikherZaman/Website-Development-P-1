@@ -30,3 +30,27 @@ document.addEventListener('DOMContentLoaded', function() {
       images[currentIndex].classList.add('active');
     });
   });
+
+  let slideIndex = 0;
+const slides = document.querySelectorAll('.about-pic');
+const dots = document.querySelectorAll('.dot');
+
+function showSlide(n) {
+    slides[slideIndex].classList.remove('active');
+    dots[slideIndex].classList.remove('active');
+    slideIndex = (n + slides.length) % slides.length;
+    slides[slideIndex].classList.add('active');
+    dots[slideIndex].classList.add('active');
+}
+
+function nextSlide() {
+    showSlide(slideIndex + 1);
+}
+
+// Auto advance slides every 5 seconds
+setInterval(nextSlide, 5000);
+
+// Add click event to dots
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => showSlide(index));
+});
