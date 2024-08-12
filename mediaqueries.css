@@ -105,6 +105,7 @@
       width: auto;
       height: 46vw;
       justify-content: center;
+     
     }
     .section__text__p2 {
       font-size: 1.25rem;
@@ -115,5 +116,21 @@
     .text-container {
       text-align: justify;
     }
-  }
+    
+    img.profile-pic {
+        width:auto ;
+        height: auto;
+        max-width: 300px ;
+        max-height: 300px ;
+        object-fit: cover;
+        border-radius: 0%;
+    }
+    .slideshow-container, .section__pic-container {
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+        transform: translateX(40px);
+     
+    }
 
+  }
