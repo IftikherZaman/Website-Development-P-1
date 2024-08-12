@@ -123,13 +123,13 @@
         max-width: 300px ;
         max-height: 300px ;
         object-fit: cover;
-        border-radius: 0%;
+        border-radius: 50%;
     }
     .slideshow-container, .section__pic-container {
         display: flex;
         align-items: center;
         justify-content: center ;
-        transform: translateX(40px);
+        transform: translateX(30px);
      
     }
 
