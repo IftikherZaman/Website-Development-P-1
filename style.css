@@ -541,6 +541,7 @@ main {
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    
 }
 
 #about .details-container:hover {
@@ -603,6 +604,7 @@ body.night-mode {
     width: 100%;
     max-width: 640px;
     margin: 2rem auto;
+    padding-bottom: 5rem;
 }
 
 .video-title {
@@ -618,6 +620,7 @@ body.night-mode {
     width: 100%;
     overflow: hidden;
     padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    padding-bottom: 4rem;
 }
 
 .video-container iframe {
